@@ -15,6 +15,7 @@ shape_predictor_68_face_landmarks.dat or another pretrained model which is comap
 ```docker pull artikot/blind_detection```
 For this type only one option with camera is availible
 
-Use following command:
+Use following commands:
+```xhost +local:```
 
 ```docker run -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY --device /dev/video0 artikot/blind_detection```
